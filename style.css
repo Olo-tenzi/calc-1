@@ -320,6 +320,9 @@ body {
 #questionText {
   font-size: 14pt ;
 }
-#popupRectangle {
-  width: 35vw;
+
+#startText {
+  font-weight: bold;
+  color: rgb(14, 0, 120);
+  font-size: large;
 }
