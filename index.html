@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenzi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Main Rectangle -->
+    <div class="rectangle">
+      <div class="topbar">
+        <span class="topBarText">Home</span>
+      </div>
+
+      <div class="greeting-container">
+        <span class="big">Hey! I'm Tenzi</span>
+        <span class="small">Interested in a game?</span>
+
+        <button class="game-button">
+          <img src="images/controller.png" alt="Controller" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Popup Guide Rectangle -->
+    <div class="popup-rectangle" id="popupRectangle">
+      <div class="topbar">
+        <span class="topBarText">Guide Lines</span>
+        <button class="closeButton">X</button>
+      </div>
+      <div class="instructions-container">
+        <p class="info">
+          There will be a series of questions requiring you <br>to take derivatives, antiderivatives and use them.<br>
+          <br> Solve them as fast as you can!
+          <br> A pen, a piece of paper and a calculator would be of great help.
+          <br> Here's a refresher on the shortcut rules.
+        </p>
+      </div>
+      <button class="openRules">
+        <img src="images/file.png" alt="file" />
+      </button>
+
+      <button class="startButton" id="startQuiz">
+        <a id="startText">START</a>
+      </button>
+    </div>
+
+    <!-- Popup Quiz Rectangle -->
+    <div class="popup-rectangle" id="popupQuiz">
+      <div class="topbar">
+        <span class="topBarText">Quiz</span>
+        <button class="closeButton" id="closeQuiz">X</button>
+      </div>
+
+      <button class="openRules" id="rulesInside">
+        <img src="images/file.png" alt="file" />
+      </button>
+
+      <!-- Timer -->
+      <div id="timer">00:00</div>
+
+      <!-- Quiz Container -->
+      <div class="quizContainer">
+        <p id="questionText"></p>
+        <div id="options"></div>
+      </div>
+    </div>
+
+    <!-- Shortcut Rules Rectangle -->
+    <div class="popup-rectangle" id="Shortcut">
+      <div class="topbar">
+        <span class="topBarText">Short-cut rules</span>
+        <button class="closeButton" id="closeRules">X</button>
+      </div>
+
+      <div class="myBox">
+        <p>General rules:</p>
+        <ul>
+          <li>Sum rule: d/dx (f(x) + g(x)) = f'(x) + g'(x)</li>
+          <li>Constant multiple rule: d/dx (c·f(x)) = c·f'(x)</li>
+          <li>Constant function rule: d/dx (c) = 0</li>
+          <li>Power rule: d/dx (xⁿ) = n·xⁿ⁻¹</li>
+          <li>Exponential rule: d/dx (aˣ) = aˣ ln(a)</li>
+        </ul>
+
+        <h3>Trigonometric function rules:</h3>
+        <ul>
+          <li>d/dx (sin x) = cos x</li>
+          <li>d/dx (cos x) = −sin x</li>
+          <li>d/dx (tan x) = sec² x</li>
+        </ul>
+
+        <h3>Other core rules:</h3>
+        <ul>
+          <li>Product rule: (f·g)' = f'·g + g'·f</li>
+          <li>Quotient rule: (f/g)' = (g·f' − f·g') / g²</li>
+          <li>Chain rule: (f(g(x)))' = f'(g(x)) · g'(x)</li>
+          <li>Log rule: d/dx (ln x) = 1/x</li>
+        </ul>
+
+        <h3>Inverse trig rules:</h3>
+        <ul>
+          <li>d/dx (arctan x) = 1 / (1 + x²)</li>
+          <li>d/dx (arcsin x) = 1 / √(1 − x²)</li>
+        </ul>
+
+        <h3>More trig rules:</h3>
+        <ul>
+          <li>d/dx (cot x) = −csc² x</li>
+          <li>d/dx (sec x) = sec x · tan x</li>
+          <li>d/dx (csc x) = −csc x · cot x</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="popups.js"></script>
+</body>
+</html>
