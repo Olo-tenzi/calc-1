@@ -91,7 +91,7 @@ const quizQuestions = [
   { question: "Derivative of 2x²+3x-5?", options: ["7x-5", "4x+3", "4x+9", "2x"], answer: 3 },
   { question: "Derivative of 2cos(x)?", options: ["-2sin(x)", "sin(x)", "tan(x)", "1"], answer: 0 },
   { question: "Absolute maximum and minimum of q(x) = x²/(x-2) between 3 and 7?", options: ["Maximum = 2, Minimum = -6", "Maximum = 9.8, Minimum = 8", "Maximum = 1, Minimum = -4", "Maximum = 8, Minimum = 0"], answer: 1 },
-  { question: "Find the absolute maximum and minimum of f(x) = x³ - 3x² + 4 on [0, 3]?", options: ["Maximum = 4, Minimum = 0", "Maximum = 7, Minimum = 0", "Maximum = 4, Minimum = -1", "Maximum = 3, Minimum = -2"], answer: 2 },
+  { question: "Find the absolute maximum and minimum of f(x) = x³ - 3x² + 4 on [0, 3]?", options: ["Maximum = 4, Minimum = 0", "Maximum = 7, Minimum = 0", "Maximum = 4, Minimum = -1", "Maximum = 3, Minimum = -2"], answer: 0 },
   { question: "Evaluate lim(x→0) (sin(3x)/x) using L'Hôpital's Rule?", options: ["0", "3", "1", "∞"], answer: 1 },
   { question: "∫(2x³ - 5x² + 4) dx?", options: ["(1/2)x⁴ - (5/3)x³ + 4x + C", "(1/2)x³ - (5/2)x² + 4x + C", "(1/2)x⁴ - 5x³ + 4x + C", "2x⁴ - (5/3)x³ + 4x + C"], answer: 0 },
   { question: "If x² + y² = 25, find dy/dx using implicit differentiation?", options: ["-x/y", "y/x", "x/y", "-y/x"], answer: 0 },
@@ -166,4 +166,5 @@ startQuizButton.addEventListener('click', () => {
   stopTimer();
   startTimer();
 });
+
 
